@@ -2,9 +2,11 @@
 
 
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding-top: 60px;
+}
+
+li{
+    list-style: none;
 }
 
 /*stili navbar*/
@@ -32,6 +34,14 @@ body{
 /*stili sidebar*/
 
 .ms-bg-sidebar{
-    background-color: blue;
+    height: calc(100vh - 60px);
+    background-image: url(img/sidebar-bg.png);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #041f34;
+}
+
+.ms-height{
     height: 100%;
 }
