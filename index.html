@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -15,8 +16,8 @@
         <nav class="container-fluid d-flex ms-nav-container fixed-top justify-content-between">
 
             <div class="col-lg-1 col-md-2 col-sm-2 p-1">
-                <img src="img/logo.svg" alt="logo" class="img-fluid">
-                <img src="img/mobile-logo.png" alt="" class="img-fluid d-none">
+                <img src="img/logo.svg" alt="logo" class="img-fluid d-none d-lg-block">
+                <img src="img/mobile-logo.png" alt="logo" class="img-fluid d-lg-none d-block" style="max-width: 50px;">
             </div>
 
             <div class="col-lg-10 col-md-9 col-sm-9">
@@ -27,10 +28,10 @@
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 ms-nav-buttons">
-                <i class="fa-solid fa-list m-1 d-none d-lg-block"></i>
-                <i class="fa-solid fa-circle-question m-1 d-none d-lg-block"></i>
-                <i class="fa-solid fa-ellipsis-vertical m-1 d-none d-lg-block"></i>
-                <i class="fa-solid fa-bell m-1 ms-bell-color"></i>
+                <i class="fa-solid fa-list d-none d-lg-block"></i>
+                <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
+                <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
+                <i class="fa-solid fa-bell ms-bell-color"></i>
             </div>
 
         </nav>
@@ -40,9 +41,9 @@
 
     <main>
 
-        <section>                <!--sidebar-->
+        <div class="row">
 
-            <div class="col-lg-1 col-md-1 col-sm-2">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-1"> <!--sidebar-->
 
                 <div class="ms-bg-sidebar">
 
@@ -53,8 +54,8 @@
                                 <li class="mb-3"><i class="fa-solid fa-chart-simple text-white"></i><span class="text-white d-none d-lg-inline-block">&nbsp; Stats</span></li>
                                 <li class="mb-3"><i class="fa-solid fa-signal text-white"></i><span class="text-white d-none d-lg-inline-block">&nbsp; Signals</span></li>
                             </ul>
-                        
-                        
+                            
+                            
 
                         <div class="mt-auto">    <!--bottom sidebar content-->                      
                             <i class="fa-solid fa-gear text-white"></i><span class="text-white d-none d-lg-inline-block">&nbsp; Admin</span>                      
@@ -66,19 +67,125 @@
 
             </div>
 
-        </section>
+            
 
+            <!--main content-->
 
-        <section>              <!--main content-->
+            <div class="col-11 col-md-11 col-sm-11 col-11">
+        
+                <div class=" ms-bg-breadcrump d-flex"><!--breadcrumb section-->
 
-            <div class="col-11 col-md-11 col-sm-10 ">
+                    <div class="col-6">
+                        <div class="text-white d-flex flex-column">
 
-                <div class="container-fluid"></div>
+                            <div class="d-flex">
+                                <h3 class="text-white">Boolean</h3>
+                                <div class="ms-bc-decoration">Piano blaze</div>
+                            </div>
 
+                            <nav aria-label="breadcrumb d-flex">
+
+                                <ol class="breadcrumb">
+                                    <li><span class="ms-bc-decoration">3 app</span></li>
+                                    <li class="breadcrumb-item"><a href="#" class="text-white ms-bc-decoration">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="text-white ms-bc-decoration">Library</a></li>
+                                    <li class="breadcrumb-item text-white" aria-current="page">Data</li>
+                                </ol>
+                                
+                            </nav>
+                        
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-white">studenti online negli ultimi 30 minuti</div>
+                        <h3 class="text-white">125</h3>
+                    </div>
+                    <div class="col-2 d-flex">
+                        <span class="text-white">Nuovo studente</span>
+                        <button class="btn text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-regular fa-square-plus ms-fs-add"></i></button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                          <div class="offcanvas-header">
+                            <h5 id="offcanvasTopLabel">Inserisci un nuovo studente</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body ms-laraghezza">
+                            
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-4">
+                                  <label for="validationCustom01" class="form-label">First name</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="validationCustom02" class="form-label">Last name</label>
+                                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="validationCustomUsername" class="form-label">Username</label>
+                                  <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                      Please choose a username.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom03" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="validationCustom03" required>
+                                  <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="validationCustom04" class="form-label">State</label>
+                                  <select class="form-select" id="validationCustom04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a valid state.
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="validationCustom05" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="validationCustom05" required>
+                                  <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                      Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                      You must agree before submitting.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+                              </form>
+
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 
-        </section>
+        </div>
 
     </main>
 

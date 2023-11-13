@@ -9,6 +9,10 @@ li{
     list-style: none;
 }
 
+.row{
+    --bs-gutter-x: 0;
+}
+
 /*stili navbar*/
 
 .ms-bg-searchbar{
@@ -44,4 +48,28 @@ li{
 
 .ms-height{
     height: 100%;
+}
+
+/*stili breadcrump section*/
+
+.ms-bg-breadcrump{
+    background-color: #1a72e9;
+    min-height: 100px;
+}
+
+.ms-bc-decoration{
+    background-color:#175aba;
+    border: 1px solid #175aba;
+    padding: 2px;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ms-fs-add{
+    font-size: 40px;
+}
+
+.ms-larghezza{
+width: 50%;
 }
