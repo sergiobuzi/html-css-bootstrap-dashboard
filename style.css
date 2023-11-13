@@ -82,13 +82,7 @@ li{
     padding-left: 10px;
     border-bottom: 0;
 }
-.table{
-    margin-left: 10px;
-    border: 1px  solid rgb(194, 194, 194);
-    margin-top: -10px;
-    border-radius: 5px;
-   
-}
+
 
 .ms-table-icon{
     background-color: #f36451;
@@ -140,4 +134,28 @@ li{
 
 .form-check{
     border-bottom: 1px solid gray;
+}
+
+.ms-chart-style{
+    border: 1px solid  rgb(194, 194, 194);
+    border-radius: 5px;
+    
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.ms-label-title{
+    border-bottom: 1px solid rgb(194, 194, 194);
+    background-color:#f7f6f6 ;
+    padding: 10px;
+}
+
+.card{
+    padding: 5px;
+    border: 1px solid rgb(194, 194, 194);
+    margin: 10px;
+}
+
+.ms-todo-style{
+    margin: 10px; 
 }

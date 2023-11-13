@@ -110,51 +110,57 @@
                             <h5 id="offcanvasTopLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                           </div>
-                          <div class="offcanvas-body">
+
+                          <div class="offcanvas-body"><!--offcanvas-->
                             
                             <form class="row g-3">
                                 <div class="col-md-6">
-                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <label for="inputEmail4" class="form-label">Nome</label>
                                   <input type="email" class="form-control" id="inputEmail4">
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <label for="inputPassword4" class="form-label">Cognome</label>
                                   <input type="password" class="form-control" id="inputPassword4">
                                 </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                  </div>              
                                 <div class="col-12">
-                                  <label for="inputAddress" class="form-label">Address</label>
-                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                </div>
-                                <div class="col-12">
-                                  <label for="inputAddress2" class="form-label">Address 2</label>
-                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                  <label for="inputAddress2" class="form-label">Indirizzo</label>
+                                  <input type="text" class="form-control" id="inputAddress2">
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="inputCity" class="form-label">City</label>
+                                  <label for="inputCity" class="form-label">Città</label>
                                   <input type="text" class="form-control" id="inputCity">
                                 </div>
                                 <div class="col-md-4">
-                                  <label for="inputState" class="form-label">State</label>
+                                  <label for="inputState" class="form-label">Stato</label>
                                   <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
+                                    <option selected>Scegli...</option>
                                     <option>...</option>
                                   </select>
                                 </div>
                                 <div class="col-md-2">
-                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <label for="inputZip" class="form-label">CAP</label>
                                   <input type="text" class="form-control" id="inputZip">
                                 </div>
                                 <div class="col-12">
                                   <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="gridCheck">
                                     <label class="form-check-label" for="gridCheck">
-                                      Check me out
+                                      Seleziona per proseguire
                                     </label>
                                   </div>
                                 </div>
                                 <div class="col-12">
-                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                  <button type="submit" class="btn btn-primary">Salva</button>
                                 </div>
+
                               </form>
 
                           </div>
@@ -164,103 +170,169 @@
                 </div>
                             <!--main content-->
 
-                <div class="row">
-                    <div class="col-8">
-                        <h3 class="box-title">Prossime classi</h3>
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">Nome</th>
-                                <th scope="col">Data inizio</th>
-                                <th scope="col">ROI</th>
-                                <th scope="col">Stato</th>
-                                <th scope="col">Azioni</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 75</th>
-                                <td>15 Feb 2021</td>
-                                <td>20%</td>
-                                <td><span class="ms-table-status-true">done</span></td>
-                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 76</th>
-                                <td>16 Feb 2021</td>
-                                <td>20%</td>
-                                <td><span class="ms-table-status-true">done</span></td>
-                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 77</th>
-                                <td>17 Feb 2021</td>
-                                <td>20%</td>
-                                <td><span class="ms-table-status-true ms-table-status-none">process</span></td>
-                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 78</th>
-                                <td>18 Feb 2021</td>
-                                <td>20%</td>
-                                <td><span class="ms-table-status-true">done</span></td>
-                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 79</th>
-                                <td>19 Feb 2021</td>
-                                <td>20%</td>
-                                <td><span class="ms-table-status-true ms-table-status-false">failed</span></td>
-                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 80</th>
-                                <td>20 Feb 2021</td>
-                                <td>20%</td>
-                                <td><span class="ms-table-status-true">done</span></td>
-                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 81</th>
-                                <td>21 Feb 2021</td>
-                                <td>20%</td>
-                                <td><span class="ms-table-status-true ms-table-status-false">failed</span></td>
-                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 82</th>
-                                <td>22 Feb 2021</td>
-                                <td>20%</td>
-                                <td><span class="ms-table-status-true">done</span></td>
-                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
-                              </tr>
-                            </tbody>
-                          </table>
+                <div class="row"><!--prosime  classi-->
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        
+                        <div class="ms-chart-style">
+                            <h3 class="ms-label-title">Prossime classi</h3>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Data inizio</th>
+                                    <th scope="col">ROI</th>
+                                    <th scope="col">Stato</th>
+                                    <th scope="col">Azioni</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 75</th>
+                                    <td>15 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="ms-table-status-true">done</span></td>
+                                    <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 76</th>
+                                    <td>16 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="ms-table-status-true">done</span></td>
+                                    <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 77</th>
+                                    <td>17 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="ms-table-status-true ms-table-status-none">process</span></td>
+                                    <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 78</th>
+                                    <td>18 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="ms-table-status-true">done</span></td>
+                                    <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 79</th>
+                                    <td>19 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="ms-table-status-true ms-table-status-false">failed</span></td>
+                                    <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 80</th>
+                                    <td>20 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="ms-table-status-true">done</span></td>
+                                    <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 81</th>
+                                    <td>21 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="ms-table-status-true ms-table-status-false">failed</span></td>
+                                    <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 82</th>
+                                    <td>22 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="ms-table-status-true">done</span></td>
+                                    <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+
+                          
+                          <div class="ms-chart-style">  <!--faq-->
+                            <h3 class="ms-label-title">F.A.Q.</h3>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                      Come aggiungere un nuovo studente?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Forza Lazio carica lalalala</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                      Come posso accedere alle informazioni del mio account?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Forza Laziooo lalalala</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                      Posso usare questa dashboard  da mobile?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">A Roma solo la Lazio</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                          </div>
+
+
                     </div>
 
-                    <div class="col-3 ms-main-margin">
+                    <div class="col-lg-3 col-md-12 col-sm-12"><!--todo-->
 
-                        <h3 class="box-title">Todo</h3>
-                        <div class="row ms-checklist-style">
-                            <div class="form-check ">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Kickoff nuove classi
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                  Lezione su Bootstrap 5 in classe #75
-                                </label>
-                              </div><div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Controllare username github studenti
-                                </label>
-                              </div>
-                              
+                        <div class="ms-chart-style">
+                            
+                            <h3 class="ms-label-title">Todo</h3>
+                            <div class="row ms-checklist-style ms-todo-style">
+                                <div class="form-check ">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Kickoff nuove classi
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Lezione su Bootstrap 5 in classe #75
+                                    </label>
+                                  </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Controllare username github studenti
+                                    </label>
+                                  </div>
+                            </div>
                         </div>
+
+                        <div class="ms-chart-style"><!--chart-->
+
+                            <div class="card">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="chart">
+                                <div class="card-body">
+                                  <h5 class="card-title">Utenti attivi</h5>
+                                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">Gennaio:1200</li>
+                                  <li class="list-group-item">Febbraio:800</li>
+                                  <li class="list-group-item">Marzo:1500</li>
+                                </ul>
+                                <div class="card-body">
+                                  <a href="#" class="card-link">Visualizza report approfondito</a>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                     </div>
                 </div>
