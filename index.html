@@ -105,75 +105,55 @@
                         <span class="text-white">Nuovo studente</span>
                         <button class="btn text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-regular fa-square-plus ms-fs-add"></i></button>
 
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas offcanvas-end ms-laraghezza" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                           <div class="offcanvas-header">
                             <h5 id="offcanvasTopLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                           </div>
-                          <div class="offcanvas-body ms-laraghezza">
+                          <div class="offcanvas-body">
                             
-                            <form class="row g-3 needs-validation" novalidate>
-                                <div class="col-md-4">
-                                  <label for="validationCustom01" class="form-label">First name</label>
-                                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                                  <div class="valid-feedback">
-                                    Looks good!
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <label for="validationCustom02" class="form-label">Last name</label>
-                                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                                  <div class="valid-feedback">
-                                    Looks good!
-                                  </div>
-                                </div>
-                                <div class="col-md-4">
-                                  <label for="validationCustomUsername" class="form-label">Username</label>
-                                  <div class="input-group has-validation">
-                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                                    <div class="invalid-feedback">
-                                      Please choose a username.
-                                    </div>
-                                  </div>
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
                                 </div>
                                 <div class="col-md-6">
-                                  <label for="validationCustom03" class="form-label">City</label>
-                                  <input type="text" class="form-control" id="validationCustom03" required>
-                                  <div class="invalid-feedback">
-                                    Please provide a valid city.
-                                  </div>
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
                                 </div>
-                                <div class="col-md-3">
-                                  <label for="validationCustom04" class="form-label">State</label>
-                                  <select class="form-select" id="validationCustom04" required>
-                                    <option selected disabled value="">Choose...</option>
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">State</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
                                     <option>...</option>
                                   </select>
-                                  <div class="invalid-feedback">
-                                    Please select a valid state.
-                                  </div>
                                 </div>
-                                <div class="col-md-3">
-                                  <label for="validationCustom05" class="form-label">Zip</label>
-                                  <input type="text" class="form-control" id="validationCustom05" required>
-                                  <div class="invalid-feedback">
-                                    Please provide a valid zip.
-                                  </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
                                 </div>
                                 <div class="col-12">
                                   <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
-                                      Agree to terms and conditions
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Check me out
                                     </label>
-                                    <div class="invalid-feedback">
-                                      You must agree before submitting.
-                                    </div>
                                   </div>
                                 </div>
                                 <div class="col-12">
-                                  <button class="btn btn-primary" type="submit">Submit form</button>
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
                                 </div>
                               </form>
 
@@ -181,6 +161,108 @@
                         </div>
                     </div>
 
+                </div>
+                            <!--main content-->
+
+                <div class="row">
+                    <div class="col-8">
+                        <h3 class="box-title">Prossime classi</h3>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Data inizio</th>
+                                <th scope="col">ROI</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 75</th>
+                                <td>15 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="ms-table-status-true">done</span></td>
+                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 76</th>
+                                <td>16 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="ms-table-status-true">done</span></td>
+                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 77</th>
+                                <td>17 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="ms-table-status-true ms-table-status-none">process</span></td>
+                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 78</th>
+                                <td>18 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="ms-table-status-true">done</span></td>
+                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 79</th>
+                                <td>19 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="ms-table-status-true ms-table-status-false">failed</span></td>
+                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 80</th>
+                                <td>20 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="ms-table-status-true">done</span></td>
+                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 81</th>
+                                <td>21 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="ms-table-status-true ms-table-status-false">failed</span></td>
+                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><i class="fa-solid fa-code ms-table-icon"></i> Classe 82</th>
+                                <td>22 Feb 2021</td>
+                                <td>20%</td>
+                                <td><span class="ms-table-status-true">done</span></td>
+                                <td><i class="fa-solid fa-pen ms-icon-style"></i> <i class="fa-solid fa-trash ms-icon-style"></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
+                    <div class="col-3 ms-main-margin">
+
+                        <h3 class="box-title">Todo</h3>
+                        <div class="row ms-checklist-style">
+                            <div class="form-check ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Kickoff nuove classi
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Lezione su Bootstrap 5 in classe #75
+                                </label>
+                              </div><div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Controllare username github studenti
+                                </label>
+                              </div>
+                              
+                        </div>
+
+                    </div>
                 </div>
 
             </div>

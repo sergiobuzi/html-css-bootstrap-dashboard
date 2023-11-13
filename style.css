@@ -70,6 +70,74 @@ li{
     font-size: 40px;
 }
 
-.ms-larghezza{
-width: 50%;
+/*stili main content*/
+
+.box-title{
+    width: 100%;
+    margin-left: 10px;
+    background-color: #f7f6f6;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border-bottom: 0;
+}
+.table{
+    margin-left: 10px;
+    border: 1px  solid rgb(194, 194, 194);
+    margin-top: -10px;
+    border-radius: 5px;
+   
+}
+
+.ms-table-icon{
+    background-color: #f36451;
+    color: white;
+    padding: 5px;
+    border: 1px solid #f36451;
+    border-radius: 50%;
+}
+
+
+.ms-table-status-true{
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ms-table-status-false{
+    background-color: red;
+    border-color: red;
+}
+
+.ms-table-status-none{
+    background-color: orange;
+    border-color: orange;
+}
+
+.ms-icon-style{
+    font-size: 20px;
+    margin: 5px;
+    border: grey 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+    color: grey;
+}
+
+.ms-main-margin{
+    margin-left: 10px;
+}
+
+.ms-checklist-style{
+    margin-left: 10px;
+    border: 1px  solid rgb(194, 194, 194);
+    margin-top: -10px;
+    border-radius: 5px;
+}
+
+.form-check{
+    border-bottom: 1px solid gray;
 }
